@@ -1,12 +1,14 @@
-body {
-  background-color: black;
-}
+
 
 /* Colors */
 .wd-fg-color-white { color: white; }
 
 .wd-bg-color-dark-gray {
   background-color: #212327;
+}
+
+.wd-test-class {
+  background-color: #0000ff;
 }
 
 .wd-border-color {
@@ -19,11 +21,19 @@ body {
 }
 
 /* Misc */
+.wd-margin-top-2-half {
+  margin-top: 12px;
+}
+
+
+
 .wd-search {
   width: calc(100% - 80px);
   height: 40px;
-  border: none;
+  border-style: solid;
+  border-width: thin;
   border-radius: 50px;
+  border-color: #ddd;
 }
 
 .wd-gear {
@@ -66,21 +76,19 @@ body {
   width: 100%;
   font: 13px Helvetica Neue Light, sans-serif;
   color: rgb(110, 118, 125);
-  padding-bottom: 15px;
-  border-bottom-style: solid;
+  border-style: solid;
   border-color: rgb(47, 51, 54);
-  border-width: thin;
+  border-width: 1px;
 }
 
 .wd-bold-text {
-  color: white;
+  color: black;
 }
 
 .wd-post-img {
   width: 100px;
   height: 100px;
   float: right;
-  margin-right: 16px;
   border-radius: 15px;
 }
 
@@ -88,9 +96,34 @@ body {
   height: 100px;
   width: 100%;
   font: 13px Helvetica Neue Light, sans-serif;
+  line-height: 1.4;
   color: rgb(110, 118, 125);
-  padding-bottom: 15px;
-  border-bottom-style: solid;
-  border-color: rgb(47, 51, 54);
-  border-width: thin;
+  border-style: solid;
+  border-color: rgb(210, 210, 210);
+  border-width: 1px;
+}
+
+.wd-big-img-text {
+    color: white;
+    font: 40px Helvetica Neue, sans-serif;
+}
+
+.wd-rec-img {
+  width: 40px;
+  height: 40px;
+  float: left;
+  border-radius: 20px;
+}
+
+.wd-rec-text {
+  float: left;
+  line-height: 1.3;
+}
+
+.wd-float-right {
+  float: right;
+}
+
+.wd-float-left {
+  float: left;
 }

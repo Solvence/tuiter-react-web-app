@@ -2,88 +2,221 @@
 <html lang="en">
 <head>
     <title>Tuiter - Anthony Mu!</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="index.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          rel="stylesheet"/>
 </head>
 <body>
 
-<div class="wd-margin-left">
-    <div>
-        <input class="
-            wd-search
-            wd-bg-color-dark-gray
-            wd-fg-color-white
-            "
-               placeholder="Search Tuiter">
-        <a href="explore-settings.html" class="wd-gear">
-            <img href="explore-settings.html" src="tuiter_gear_blue.png" width="20" height="20"/>
-        </a>
+<div class="row">
+    <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2">
+        <div class="list-group mt-2 ms-2">
+            <i class="fa fa-t list-group-item"></i>
+
+            <a href="../home.html" class="list-group-item list-group-item-action">
+                <i class="fa fa-home wd-float-left pt-1"></i>
+                <span class="ps-2 d-none d-xl-block wd-float-left">Home</span>
+            </a>
+            <a class="list-group-item list-group-item-action active">
+                <i class="fa fa-hashtag wd-float-left pt-1"></i>
+                <span class="ps-2 d-none d-xl-block wd-float-left">Explore</span>
+            </a>
+            <a href="../notifications.html" class="list-group-item list-group-item-action">
+                <i class="fa fa-bell wd-float-left pt-1"></i>
+                <span class="ps-2 d-none d-xl-block wd-float-left">Notifications</span>
+            </a>
+            <a href="../messages.html" class="list-group-item list-group-item-action">
+                <i class="fa fa-envelope wd-float-left pt-1"></i>
+                <span class="ps-2 d-none d-xl-block wd-float-left">Messages</span>
+            </a>
+            <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+                <i class="fa fa-bookmark wd-float-left pt-1"></i>
+                <span class="ps-2 d-none d-xl-block wd-float-left">Bookmarks</span>
+            </a>
+            <a href="../lists.html" class="list-group-item list-group-item-action">
+                <i class="fa fa-list wd-float-left pt-1"></i>
+                <span class="ps-2 d-none d-xl-block wd-float-left">Lists</span>
+            </a>
+            <a href="../profile.html" class="list-group-item list-group-item-action">
+                <i class="fa fa-user wd-float-left pt-1"></i>
+                <span class="ps-2 d-none d-xl-block wd-float-left">Profile</span>
+            </a>
+            <a href="../more.html" class="list-group-item list-group-item-action">
+                <i class="fa fa-ellipsis wd-float-left pt-1"></i>
+                <span class="ps-2 d-none d-xl-block wd-float-left">More</span>
+            </a>
+        </div>
+        <button class="btn btn-primary mt-2 ms-2 w-100 rounded-pill">
+            Tuit
+        </button>
     </div>
-</div>
-<div class="wd-link-row wd-margin-left">
-    <div class="wd-selected-link">
-        For you</div>
-    <div class="wd-link">
-        Trending</div>
-    <div class="wd-link">
-        COVID-19</div>
-    <div class="wd-link">
-        News</div>
-    <div class="wd-link">
-        Sports</div>
-    <div class="wd-link">
-        Entertainment</div>
-    <div class="wd-float-done"></div> <!-- I wonder what happens if you don't clear-->
+    <div class="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6">
+        <div class="mt-2">
+            <div>
+                <i class="fa fa-magnifying-glass position-absolute wd-margin-top-2-half ms-3"></i>
+                <input class="wd-search ps-5" placeholder="Search Tuiter" >
+
+                <a href="explore-settings.html" class="">
+                    <i class="fa fa-2x fa-gear position-absolute mt-1 ms-4"></i>
+                </a>
+            </div>
+        </div>
+        <ul class="nav nav-tabs mt-2">
+            <li class="nav-item">
+                <a class="nav-link active" href="for-you.html">For you</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="trending.html">Trending</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="sports.html">Sports</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="entertainment.html">Entertainment</a>
+            </li>
+        </ul>
+        <div class="position-relative">
+            <div class="position-absolute wd-big-img-text bottom-0 start-0 ms-2 mb-2">SpaceX's Starship</div>
+            <img class="w-100 mt-2"
+                 src="../../images/spacex-starship.webp"/>
+        </div>
+
+        <div>
+            <div class="wd-post-type-img">
+                <img class="wd-post-img pt-2 pb-2 ps-2 pe-2"
+                     src="../../images/react-logo.svg"/>
+                <div class="ps-2 pt-2">
+                    Web Development
+                    <br>
+                    <b class="wd-bold-text pb-1">ReactJS</b> <i class="fa-solid fa-check"></i> - 2h
+                    <br>
+                    <b class="wd-bold-text pb-1">React.js is a component based front end library that makes it very
+                        easy to build Single Page Applications or SPAs</b>
+                </div>
+            </div>
+            <div class="wd-post-type-img">
+                <img class="wd-post-img pt-2 pb-2 ps-2 pe-2"
+                     src="../../images/javascript-logo.png"/>
+                <div class="ps-2 pt-2">
+                    <b class="wd-bold-text pb-1">JavaScript</b> <i class="fa-solid fa-check"></i> - 2h
+                    <br>
+                    <b class="wd-bold-text pb-1">JavaScript is a programming language that can run on
+                    browsers as well as desktops</b>
+                    <br>
+                    123K Tuits
+                </div>
+            </div>
+            <div class="wd-post-type-img">
+                <img class="wd-post-img pt-2 pb-2 ps-2 pe-2"
+                     src="../../images/jquery-logo.png"/>
+                <div class="ps-2 pt-2">
+                    Web Development
+                    <br>
+                    <b class="wd-bold-text pb-1">jQuery</b>
+                    <br>
+                    123K Tuits
+                </div>
+            </div>
+            <div class="wd-post-type-img">
+                <img class="wd-post-img pt-2 pb-2 ps-2 pe-2"
+                     src="../../images/nodejs-logo.png"/>
+                <div class="ps-2 pt-2">
+                    Web Development
+                    <br>
+                    <b class="wd-bold-text pb-1">NodeJS</b> <i class="fa-solid fa-check"></i> - 2h
+                    <br>
+                    123K Tuits
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 d-none d-lg-block col-sm-0 col-md-0 col-lg-5 col-xl-4">
+        <div class="list-group mt-2 ms-2">
+            <b class="list-group-item">
+                Who to Follow
+            </b>
+
+            <div class="list-group-item list-group-item-action">
+                <img class="wd-rec-img"
+                     src="../../images/java-logo.png"/>
+                <div class="wd-rec-text ps-2">
+                    <b>Java</b> <i class="fa-solid fa-check"></i>
+                    <br>
+                    @Java
+                </div>
+                <button class="btn btn-primary wd-float-right rounded-pill">
+                    Follow
+                </button>
+            </div>
+
+            <div class="list-group-item list-group-item-action">
+                <img class="wd-rec-img"
+                     src="../../images/relativity-space-logo.jpg"/>
+                <div class="wd-rec-text ps-2">
+                    <b>Relativity Space</b> <i class="fa-solid fa-check"></i>
+                    <br>
+                    @relativityspace
+                </div>
+                <button class="btn btn-primary wd-float-right rounded-pill">
+                    Follow
+                </button>
+            </div>
+
+            <div class="list-group-item list-group-item-action">
+                <img class="wd-rec-img"
+                     src="../../images/virgin-logo.svg"/>
+                <div class="wd-rec-text ps-2">
+                    <b>Virgin Galactic</b> <i class="fa-solid fa-check"></i>
+                    <br>
+                    @virgingalactic
+                </div>
+                <button class="btn btn-primary wd-float-right rounded-pill">
+                    Follow
+                </button>
+            </div>
+
+            <div class="list-group-item list-group-item-action">
+                <img class="wd-rec-img"
+                     src="../../images/NASA_logo.webp"/>
+                <div class="wd-rec-text ps-2">
+                    <b>NASA</b> <i class="fa-solid fa-check"></i>
+                    <br>
+                    @NASA
+                </div>
+                <button class="btn btn-primary wd-float-right rounded-pill">
+                    Follow
+                </button>
+            </div>
+
+            <div class="list-group-item list-group-item-action">
+                <img class="wd-rec-img"
+                     src="../../images/tesla-logo.png"/>
+                <div class="wd-rec-text ps-2">
+                    <b>Tesla</b> <i class="fa-solid fa-check"></i>
+                    <br>
+                    @Tesla
+                </div>
+                <button class="btn btn-primary wd-float-right rounded-pill">
+                    Follow
+                </button>
+            </div>
+
+        </div>
+    </div>
 </div>
 
+
+
+
+
+
+
 <hr class="wd-border-color">
-<div class="wd-margin-left">
-    <div class="wd-post-standard">
-        Trending in Science
-        <br>
-        <b class="wd-bold-text">Starship</b>
-        <br>
-        55.5K Tuits
-    </div>
-    <div class="wd-post-standard">
-        Sports - Trending
-        <br>
-        <b class="wd-bold-text">Tom Brady</b>
-        <br>
-        5,218 Tuits
-    </div>
-    <div class="wd-post-type-img">
-        <img class="wd-post-img"
-             src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Logo_of_TWICE.svg"/>
-        <b class="wd-bold-text">The New York Times</b> Yesterday
-        <br>
-        <b class="wd-bold-text">Twice is cool!</b>
-        <br>
-    </div>
-    <div class="wd-post-type-img">
-        <img class="wd-post-img"
-             src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Black_Pink_logo_%282%29.png"/>
-        <b class="wd-bold-text">Bloomberg Opinion</b> Yesterday
-        <br>
-        <b class="wd-bold-text">Blackpink is also cool!</b>
-        <br>
-    </div>
-    <div class="wd-post-type-img">
-        <img class="wd-post-img"
-             src="https://upload.wikimedia.org/wikipedia/commons/2/20/Itzy_Wannabe_-_logo.png"/>
-        COVID-19 - LIVE
-        <br>
-        <b class="wd-bold-text">I love myself!</b>
-        <br>
-    </div>
-    <div class="wd-post-type-img">
-        <img class="wd-post-img"
-             src="everglow_logo.png"/>
-        Entertainment
-        <br>
-        <b class="wd-bold-text">You know that I come first!</b>
-        <br>
-    </div>
-</div>
+
 
 
 </body>
