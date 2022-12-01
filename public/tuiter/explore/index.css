@@ -33,7 +33,7 @@
   border-style: solid;
   border-width: thin;
   border-radius: 50px;
-  border-color: #ddd;
+  background-color: white;
 }
 
 .wd-gear {
@@ -82,7 +82,7 @@
 }
 
 .wd-bold-text {
-  color: black;
+  color: white;
 }
 
 .wd-post-img {
@@ -99,7 +99,6 @@
   line-height: 1.4;
   color: rgb(110, 118, 125);
   border-style: solid;
-  border-color: rgb(210, 210, 210);
   border-width: 1px;
 }
 
