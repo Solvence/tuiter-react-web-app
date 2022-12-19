@@ -24,7 +24,7 @@ const PostSummaryItem = (
                     <div className="fw-bolder wd-author">
                         {post.userName} -{post.time}
                     </div>
-                    <div className="text">
+                    <div className="fw-bolder">
                         {post.title}
                     </div>
                 </div>
